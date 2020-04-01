@@ -44,7 +44,7 @@ class GroupWhitelist {
 	public function __construct() {
 		$this->config = MediaWikiServices::getInstance()->getMainConfig();
 		// TODO: replace with the getWhitelist
-		$this->whitelistedIds = $this->parseWhitelist();
+		$this->whitelistedIds = $this->getWhitelist();
 	}
 
 	private function parseWhitelist() {
